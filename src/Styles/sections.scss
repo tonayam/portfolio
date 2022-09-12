@@ -1,0 +1,425 @@
+section {
+  margin-top: 100px;
+  padding-left: 10px;
+  padding-top: 50px;
+  .section-title {
+    color: #9c9c9c;
+    margin-bottom: 16px;
+    font-size: 1.4rem;
+  }
+}
+
+// TECH STACK
+.stack {
+  width: 100%;
+
+  .grid-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 45%);
+    .item {
+      height: 158px;
+      @include stackMixin;
+      .logo {
+        @include flexCC;
+        height: 55%;
+        border-radius: 12px 12px 0 0;
+      }
+      .html {
+        background: rgba(228, 77, 38, 0.28);
+      }
+      .css {
+        background: rgba(41, 101, 241, 0.28);
+      }
+      .javascript {
+        background: rgba(247, 223, 30, 0.28);
+      }
+      .bootstrap {
+        background: rgba(126, 19, 248, 0.28);
+      }
+
+      .info {
+        padding: 1rem;
+        h5 {
+          color: #13131b;
+          text-transform: uppercase;
+        }
+        h6 {
+          color: #414141;
+        }
+      }
+    }
+  }
+}
+
+//   PROJECTS
+.projects {
+  .mySwiper {
+    .project {
+      @include projectMixin;
+      width: 80%;
+      height: 390px;
+      position: relative;
+
+      .img-container {
+        img {
+          border-radius: 12px;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .text {
+        margin-top: 20px;
+        position: relative;
+        padding: 8px;
+
+        h4 {
+          margin: 4px 0;
+          width: 70%;
+        }
+        .icons {
+          position: absolute;
+          right: 12px;
+          top: 10px;
+          .icon-1 {
+            position: absolute;
+            right: 30px;
+            font-size: 2rem;
+            border-radius: 50%;
+            padding: 0.2rem;
+          }
+          .icon-2 {
+            font-size: 2rem;
+            border-radius: 50%;
+            padding: 0.2rem;
+          }
+
+          .react {
+            color: #61dbfb;
+            background: #20232a;
+          }
+          .javascript {
+            background: #f7df1e;
+            color: #000000;
+          }
+          .css {
+            background: #2965f1;
+          }
+          .sass {
+            background: #cc6699;
+          }
+        }
+      }
+
+      .buttons {
+        padding: 8px;
+        display: flex;
+        position: absolute;
+        bottom: 10px;
+        button {
+          @include btnMixinMobile;
+          margin: 0 12px;
+          color: #ffffff;
+          cursor: pointer;
+
+          &:first-child {
+            width: 145px;
+            margin-left: 0;
+            background: $primaryColr;
+          }
+          &:last-child {
+            width: 120px;
+            background: rgba(196, 222, 253, 0.3);
+          }
+
+          .icon {
+            font-size: 1rem;
+            margin-right: 0.3rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// WORK EXPERIENCE
+.work {
+  .mySwiper {
+    .job {
+      @include workMixin;
+      width: 80%;
+      height: 170px;
+      padding: 12px;
+      color: #cfcfcf;
+      .card-header {
+        @include flexCB;
+        .company {
+          color: #2965f1;
+          margin-bottom: 4px;
+        }
+      }
+      .info {
+        color: #ffffff;
+        margin-top: 16px;
+      }
+    }
+  }
+  .resume-btn {
+    @include btnMixin;
+    background: rgba(196, 222, 253, 0.03);
+    color: #ffffff;
+    margin-top: 32px;
+  }
+}
+
+// SKILLS
+.skills {
+  .skills-list {
+    list-style: disc;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    li {
+      margin: 12px 16px;
+    }
+  }
+}
+
+//   CONTACT ME
+.contact {
+  padding-bottom: 2rem;
+  .socials {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    .social {
+      width: 30%;
+      border-right: 1px solid #5f5c5c;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding-right: 0;
+      margin: 0.5rem;
+
+      &:first-child {
+        margin-left: 0;
+      }
+      img {
+        margin-bottom: 8px;
+        width: 30px;
+      }
+    }
+  }
+}
+
+@include for-phone-only {
+  section {
+    .section-title {
+      font-size: 1.1rem;
+    }
+  }
+
+  //   PROJECTS
+  .projects {
+    .mySwiper {
+      .project {
+        .buttons {
+          button {
+            &:first-child {
+              width: 125px;
+              height: 40px;
+            }
+            &:last-child {
+              width: 80px;
+              height: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include for-tablet-potrait-up {
+  section {
+    margin-top: 150px;
+    padding-top: 50px;
+    .section-title {
+      font-size: 1.6rem;
+    }
+  }
+
+  // TECH STACK
+  .stack {
+    .grid-container {
+      grid-template-columns: repeat(4, 170px);
+    }
+  }
+
+  //   PROJECTS
+  .projects {
+    .mySwiper {
+      .project {
+        width: 70%;
+        height: 460px;
+
+        .buttons {
+          button {
+            &:first-child {
+              width: 245px;
+            }
+            &:last-child {
+              width: 180px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // WORK EXPERIENCE
+  .work {
+    .mySwiper {
+      .job {
+        width: 447px;
+        height: 219px;
+      }
+    }
+  }
+
+  // SKILLS
+  .skills {
+    .skills-list {
+      width: 610px;
+      li {
+        margin: 12px 32px;
+      }
+    }
+  }
+
+  .contact {
+    .socials {
+      height: 147px;
+      .social {
+        width: 255px;
+        padding-right: 60px;
+        margin: 1rem;
+
+        &:first-child {
+          margin-left: 0;
+        }
+        img {
+          margin-bottom: 16px;
+          width: 25%;
+        }
+      }
+    }
+  }
+}
+
+@include for-tablet-landscape-up {
+}
+
+@include for-desktop-up {
+  section {
+    margin-top: 200px;
+    padding-left: 120px;
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 32px;
+    }
+  }
+  // TECH STACK
+  .stack {
+    .grid-container {
+      grid-template-columns: repeat(4, 238px);
+      .item {
+        height: 158px;
+        .logo {
+          height: 50%;
+        }
+
+        .info {
+          padding: 1rem;
+        }
+      }
+    }
+  }
+
+  //   PROJECTS
+  .projects {
+    .mySwiper {
+      .project {
+        @include projectMixin;
+        width: 463px;
+        height: 470px;
+        .img-container {
+          height: 47%;
+        }
+
+        .text {
+          padding: 16px;
+
+          .icons {
+            right: 16px;
+            .icon-1 {
+              right: 40px;
+              font-size: 3.4rem;
+            }
+            .icon-2 {
+              font-size: 3.4rem;
+            }
+          }
+        }
+
+        .buttons {
+          padding: 16px;
+          button {
+            @include btnMixin;
+
+            &:first-child {
+              width: 245px;
+            }
+            &:last-child {
+              width: 165px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // WORK EXPERIENCE
+  .work {
+    .mySwiper {
+      .job {
+        @include workMixin;
+        height: 239px;
+        padding: 24px;
+      }
+    }
+    .resume-btn {
+      @include btnMixin;
+      background: rgba(196, 222, 253, 0.03);
+      color: #ffffff;
+      margin-top: 32px;
+    }
+  }
+
+  //   CONTACT ME
+  .contact {
+    .socials {
+      .social {
+        img {
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+@include for-big-desktop-up {
+}

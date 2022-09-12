@@ -1,0 +1,45 @@
+$backgroundColor: #13131b;
+$primaryColr: #0662ce;
+
+@mixin flexCC {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flexCB {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin btnMixin {
+  @include flexCC;
+  height: 55px;
+  padding: 16px 48px;
+  border-radius: 12px;
+  border: none;
+}
+@mixin btnMixinMobile {
+  @include flexCC;
+  height: 55px;
+  padding: 16px 0px;
+  border-radius: 12px;
+  border: none;
+  font-size: 0.7rem;
+}
+
+@mixin stackMixin {
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+@mixin projectMixin {
+  background: rgba(196, 222, 253, 0.3);
+  border-radius: 12px;
+}
+
+@mixin workMixin {
+  background: rgba(196, 222, 253, 0.3);
+  border-radius: 1px;
+}
