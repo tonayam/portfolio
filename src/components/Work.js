@@ -11,8 +11,8 @@ const Work = () => {
     <section className='work' id='work'>
       <h3 className='section-title'>WORK EXPERIENCE</h3>
       <Swiper slidesPerView={"auto"} spaceBetween={30} className='mySwiper'>
-        {work.map((job) => {
-          const { company, position, time, info, index } = job;
+        {work.map((job, index) => {
+          const { company, position, time, info } = job;
 
           return (
             <SwiperSlide className='job' key={index}>

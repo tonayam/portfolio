@@ -26,8 +26,8 @@ const Projects = () => {
                 <h4>{title}</h4>
                 <h4>{brief}</h4>
                 <div className='icons'>
-                  {techStack.map((stack) => {
-                    return stack;
+                  {techStack.map((stack, index) => {
+                    return <li key={index}>{stack}</li>;
                   })}
                 </div>
               </div>

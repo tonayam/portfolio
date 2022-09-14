@@ -7,8 +7,8 @@ const Skills = () => {
       <h3 className='section-title'>SKILLS</h3>
       <article>
         <ul className='skills-list'>
-          {skills.map((skill) => {
-            return <li>{skill}</li>;
+          {skills.map((skill, index) => {
+            return <li key={index}>{skill}</li>;
           })}
         </ul>
       </article>

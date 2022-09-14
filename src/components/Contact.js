@@ -6,10 +6,10 @@ const Contact = () => {
     <section className='contact' id='contact'>
       <h3 className='section-title'>CONTACT ME</h3>
       <div className='socials'>
-        {socials.map((social) => {
+        {socials.map((social, index) => {
           const { name, icon, iconName } = social;
           return (
-            <div className='social'>
+            <div className='social' key={index}>
               <img src={icon} alt={iconName} />
               <h3>{name}</h3>
             </div>

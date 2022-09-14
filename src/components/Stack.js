@@ -1,15 +1,24 @@
 import React from "react";
 import { stack } from "../data/data";
+import { motion } from "framer-motion";
+
+import { container, stackVariant } from "../animation/variants";
 
 const Stack = () => {
   return (
     <section className='stack' id='stacks'>
       <h3 className='section-title'>STACKS</h3>
-      <div className='grid-container'>
+      <motion.div
+        className='grid-container'
+        style={{ overflow: "hidden" }}
+        variants={container}
+        initial='hidden'
+        whileInView='visible'
+      >
         {stack.map((item, index) => {
           const { logo, name, years } = item;
           return (
-            <div className='item' key={index}>
+            <motion.div className='item' key={index} variants={stackVariant}>
               <div className={`logo ${name}`}>
                 <img src={logo} alt={`${name} logo`} />
               </div>
@@ -17,10 +26,10 @@ const Stack = () => {
                 <h5>{name}</h5>
                 <h6>{years}</h6>
               </div>
-            </div>
+            </motion.div>
           );
         })}
-      </div>
+      </motion.div>
     </section>
   );
 };

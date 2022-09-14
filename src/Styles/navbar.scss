@@ -1,3 +1,33 @@
+.navbar {
+  padding: 1rem;
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #414141;
+    .icon {
+      font-size: 1.8rem;
+    }
+  }
+
+  ul {
+    @include flexCC;
+    flex-direction: column;
+    height: 0;
+    overflow: hidden;
+    transition: ease-in-out 0.5s all;
+    li {
+      margin: 30px 0px;
+      font-size: 20px;
+    }
+
+    &.show-nav {
+      height: calc(100vh - 60px);
+    }
+  }
+}
+
 @include for-phone-only {
 }
 
@@ -14,11 +44,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 221px;
+    height: 151px !important;
+    .logo {
+      border-bottom: none;
+    }
+
+    .icon {
+      display: none;
+    }
 
     .nav-links {
       @include flexCC;
-      margin-top: 48px;
+      flex-direction: row;
+      margin-top: 18px;
+      height: auto;
       li {
         margin: 0 33px;
         font-size: 20px;
