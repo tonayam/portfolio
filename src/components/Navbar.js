@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FaBars, FaTimes } from "react-icons/fa";
+import logo from "../images/logo.svg";
 
 import { navVariant, navLinksVariant } from "../animation/variants";
 
@@ -32,7 +33,7 @@ const Navbar = () => {
       animate='visible'
     >
       <div className='logo'>
-        <h2>LOGO</h2>
+        <img src={logo} alt='' />
         {showNav ? (
           <FaTimes className='icon' onClick={() => setShowNav(false)} />
         ) : (

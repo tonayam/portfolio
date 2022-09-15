@@ -35,7 +35,6 @@ const Header = () => {
             variants={headerBtnsVaraints}
             initial='hidden'
             whileInView='visible'
-            transition={{ delay: 0.5, type: "spring", stiffness: 200 }}
             exit={{ x: "100%", delay: 0.5 }}
           >
             HIRE ME
@@ -45,7 +44,6 @@ const Header = () => {
             variants={headerBtnsVaraints}
             initial='hidden'
             whileInView='visible'
-            transition={{ type: "spring", stiffness: 200 }}
             exit={{ x: "100%" }}
           >
             VIEW RESUME

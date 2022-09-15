@@ -7,10 +7,12 @@ const Contact = () => {
       <h3 className='section-title'>CONTACT ME</h3>
       <div className='socials'>
         {socials.map((social, index) => {
-          const { name, icon, iconName } = social;
+          const { name, icon, link } = social;
           return (
             <div className='social' key={index}>
-              <img src={icon} alt={iconName} />
+              <a href={link} target='_blank' rel='noreferrer'>
+                {icon}
+              </a>
               <h3>{name}</h3>
             </div>
           );

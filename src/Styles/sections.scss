@@ -16,7 +16,9 @@ section {
   .grid-container {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(2, 45%);
+    grid-template-columns: repeat(2, 42%);
+    justify-content: center;
+
     .item {
       height: 158px;
       @include stackMixin;
@@ -58,12 +60,12 @@ section {
     .project {
       @include projectMixin;
       width: 80%;
-      height: 390px;
+      height: 350px;
       position: relative;
 
       .img-container {
         img {
-          border-radius: 12px;
+          border-radius: 12px 12px 0 0;
           width: 100%;
           height: 100%;
         }
@@ -122,6 +124,9 @@ section {
           margin: 0 12px;
           color: #ffffff;
           cursor: pointer;
+          a {
+            @include flexCC;
+          }
 
           &:first-child {
             width: 145px;
@@ -149,7 +154,7 @@ section {
     .job {
       @include workMixin;
       width: 80%;
-      height: 170px;
+      height: 230px;
       padding: 12px;
       color: #cfcfcf;
       .card-header {
@@ -203,13 +208,20 @@ section {
       justify-content: center;
       padding-right: 0;
       margin: 0.5rem;
+      text-transform: capitalize;
 
       &:first-child {
         margin-left: 0;
       }
-      img {
+      a {
+        width: 25%;
+        @include flexCC;
+        margin: 0 auto;
+      }
+      .icon {
+        font-size: 2.5rem;
         margin-bottom: 8px;
-        width: 30px;
+        color: #5984e8;
       }
     }
   }
@@ -256,6 +268,7 @@ section {
   .stack {
     .grid-container {
       grid-template-columns: repeat(4, 170px);
+      justify-content: start;
     }
   }
 

@@ -73,12 +73,17 @@ const headerTextVariant = {
 const headerBtnsVaraints = {
   hidden: {
     opacity: 0,
-    x: "-100%",
+    y: "100%",
   },
 
   visible: {
     opacity: 1,
-    x: 0,
+    y: 0,
+    transition: {
+      ease: [0.17, 0.67, 0.83, 0.67],
+      duration: 0.5,
+      delay: 3.5,
+    },
   },
 };
 

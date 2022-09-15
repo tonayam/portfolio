@@ -5,9 +5,7 @@ import Javascript from "../images/javascript-logo.png";
 import bootstrap from "../images/bootstrap-logo.png";
 
 // SOCIALS
-import fb from "../images/facebook.png";
-import linkedin from "../images/linkedin.png";
-import twitter from "../images/twitter.png";
+import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 
 // PROJECTS
 import insidious from "../images/insidious.png";
@@ -98,22 +96,33 @@ const work = [
 const skills = [
   `HTML`,
   `CSS`,
-  `HTML`,
-  `CSS`,
-  `HTML`,
-  `CSS`,
-  `HTML`,
-  `CSS`,
-  `HTML`,
-  `CSS`,
-  `HTML`,
-  `CSS`,
+  `JAVASCRIPT`,
+  `REACT`,
+  `FRAMER MOTION`,
+  `JQUERY`,
+  `REDUX`,
+  `FIGMA`,
 ];
 
 const socials = [
-  { name: `TONAYAM AUSTIN`, icon: fb, iconName: `facebook` },
-  { name: `TONAYAM AUSTIN`, icon: linkedin, iconName: `linkedin` },
-  { name: `TONAYAM AUSTIN`, icon: twitter, iconName: `twitter` },
+  {
+    name: `TONAYAM AUSTIN`,
+    icon: <BsGithub className='icon' />,
+    iconName: `github`,
+    link: `https://github.com/tonayam`,
+  },
+  {
+    name: `TONAYAM AUSTIN`,
+    icon: <BsLinkedin className='icon' />,
+    iconName: `linkedin`,
+    link: `https://www.linkedin.com/in/austin-tonayam`,
+  },
+  {
+    name: `PART-TIME JEDI`,
+    icon: <BsTwitter className='icon' />,
+    iconName: `twitter`,
+    link: `https://twitter.com/tonayam_austin`,
+  },
 ];
 
 export { stack, projects, socials, skills, work };
