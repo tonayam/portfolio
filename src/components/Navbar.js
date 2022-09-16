@@ -34,11 +34,9 @@ const Navbar = () => {
     >
       <div className='logo'>
         <img src={logo} alt='' />
-        {showNav ? (
-          <FaTimes className='icon' onClick={() => setShowNav(false)} />
-        ) : (
-          <FaBars className='icon' onClick={() => setShowNav(true)} />
-        )}
+        <button className='icon' onClick={() => setShowNav(!showNav)}>
+          {showNav ? <FaTimes /> : <FaBars />}
+        </button>
       </div>
       <ul className={`nav-links ${showNav && `show-nav`}`}>
         <motion.li variants={navLinksVariant}>

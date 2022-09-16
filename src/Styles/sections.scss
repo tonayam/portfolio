@@ -26,6 +26,9 @@ section {
         @include flexCC;
         height: 55%;
         border-radius: 12px 12px 0 0;
+        .icon {
+          font-size: 3rem;
+        }
       }
       .html {
         background: rgba(228, 77, 38, 0.28);
@@ -34,10 +37,17 @@ section {
         background: rgba(41, 101, 241, 0.28);
       }
       .javascript {
-        background: rgba(247, 223, 30, 0.28);
+        background: #efd81d;
       }
       .bootstrap {
-        background: rgba(126, 19, 248, 0.28);
+        background: #8411f4;
+      }
+      .react {
+        background: #1f2229;
+        color: #5ed3f3;
+      }
+      .sass {
+        background: #c66394;
       }
 
       .info {
@@ -131,7 +141,7 @@ section {
           &:first-child {
             width: 145px;
             margin-left: 0;
-            background: $primaryColr;
+            background: $primaryColor;
           }
           &:last-child {
             width: 120px;

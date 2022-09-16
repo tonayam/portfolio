@@ -1,9 +1,3 @@
-// TECH STACK
-import html from "../images/html-logo.png";
-import css from "../images/css-logo.png";
-import Javascript from "../images/javascript-logo.png";
-import bootstrap from "../images/bootstrap-logo.png";
-
 // SOCIALS
 import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 
@@ -11,14 +5,23 @@ import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 import insidious from "../images/insidious.png";
 import kodeTech from "../images/kodeTech.png";
 import marketVerse from "../images/market-verse.png";
-import { FaReact, FaSass } from "react-icons/fa";
+import { FaReact, FaSass, FaBootstrap } from "react-icons/fa";
+import { SiJavascript } from "react-icons/si";
 import { DiJavascript1, DiCss3 } from "react-icons/di";
 
 const stack = [
-  { name: `html`, years: `2 years`, logo: html },
-  { name: `css`, years: `2 years`, logo: css },
-  { name: `javascript`, years: `2 years`, logo: Javascript },
-  { name: `bootstrap`, years: `2 years`, logo: bootstrap },
+  { name: `sass`, years: `2 years`, logo: <FaSass className='icon' /> },
+  {
+    name: `bootstrap`,
+    years: `2 years`,
+    logo: <FaBootstrap className='icon' />,
+  },
+  {
+    name: `javascript`,
+    years: `2 years`,
+    logo: <SiJavascript className='icon' />,
+  },
+  { name: `react`, years: `2 years`, logo: <FaReact className='icon' /> },
 ];
 
 const projects = [

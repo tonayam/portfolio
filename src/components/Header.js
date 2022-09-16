@@ -22,11 +22,8 @@ const Header = () => {
           <motion.p variants={headerTextVariant}>I am a </motion.p>
           <motion.h1 variants={headerTextVariant}>Web Developer</motion.h1>
           <motion.p className='info' variants={headerTextVariant}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut
-            felis, congue felis, nulla faucibus elementum enim arcu. Quis ut
-            suspendisse nec dictumst leo nunc. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Nulla ut felis, congue felis, nulla
-            faucibus elementum enim arcu.
+            Building interactive websites with the latest web technologies is
+            something I am very passionate about.
           </motion.p>
         </motion.div>
         <div className='buttons'>
@@ -37,7 +34,13 @@ const Header = () => {
             whileInView='visible'
             exit={{ x: "100%", delay: 0.5 }}
           >
-            HIRE ME
+            <a
+              href='mailto:tonayam99@gmail.com'
+              target='_blank'
+              rel='noreferrer'
+            >
+              HIRE ME
+            </a>
           </motion.button>
           <motion.button
             className='resume-btn'

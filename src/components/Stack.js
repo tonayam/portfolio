@@ -19,9 +19,7 @@ const Stack = () => {
           const { logo, name, years } = item;
           return (
             <motion.div className='item' key={index} variants={stackVariant}>
-              <div className={`logo ${name}`}>
-                <img src={logo} alt={`${name} logo`} />
-              </div>
+              <div className={`logo ${name}`}>{logo}</div>
               <div className='info'>
                 <h5>{name}</h5>
                 <h6>{years}</h6>

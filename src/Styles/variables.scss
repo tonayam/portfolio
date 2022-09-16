@@ -1,5 +1,5 @@
 $backgroundColor: #13131b;
-$primaryColr: #0662ce;
+$primaryColor: #0662ce;
 
 @mixin flexCC {
   display: flex;
@@ -16,14 +16,13 @@ $primaryColr: #0662ce;
 @mixin btnMixin {
   @include flexCC;
   height: 55px;
-  padding: 16px 48px;
+  width: 165px;
   border-radius: 12px;
   border: none;
 }
 @mixin btnMixinMobile {
   @include flexCC;
   height: 55px;
-  padding: 16px 0px;
   border-radius: 12px;
   border: none;
   font-size: 0.7rem;
