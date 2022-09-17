@@ -23,7 +23,9 @@ const Header = () => {
           <motion.h1 variants={headerTextVariant}>Web Developer</motion.h1>
           <motion.p className='info' variants={headerTextVariant}>
             Building interactive websites with the latest web technologies is
-            something I am very passionate about.
+            something I am very passionate about. I spend most of my time trying
+            to figure out how to build my next interactive website, and when I'm
+            not doing that... I play video games
           </motion.p>
         </motion.div>
         <div className='buttons'>

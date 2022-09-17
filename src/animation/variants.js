@@ -10,10 +10,10 @@ const navVariant = {
     y: 0,
     transition: {
       delay: 0.4,
-      ease: "easeInOut",
+      ease: "easeIn",
       type: "spring",
       stiffness: 250,
-      staggerChildren: 0.2,
+      // staggerChildren: 0.2,
       when: "beforeChildren",
     },
   },
@@ -22,15 +22,15 @@ const navVariant = {
 const navLinksVariant = {
   hidden: {
     opacity: 0,
-    y: 200,
+    y: "100%",
   },
 
   visible: {
     opacity: 1,
     y: 0,
     transition: {
-      ease: "easeInOut",
-      duration: 1,
+      ease: "easeOut",
+      duration: 0.5,
     },
   },
 };
@@ -44,11 +44,9 @@ const headerVariant = {
   visible: {
     opacity: 1,
     transition: {
-      ease: "easeInOut",
+      ease: [0.17, 0.67, 0.83, 0.67],
       type: "spring",
       stiffness: 250,
-      staggerChildren: 0.5,
-      delayChildren: 0.5,
       when: "beforeChildren",
     },
   },
@@ -64,8 +62,8 @@ const headerTextVariant = {
     opacity: 1,
     y: 0,
     transition: {
-      ease: [0.17, 0.67, 0.83, 0.67],
-      duration: 0.5,
+      ease: "easeOut",
+      duration: 1,
     },
   },
 };
@@ -80,35 +78,10 @@ const headerBtnsVaraints = {
     opacity: 1,
     y: 0,
     transition: {
-      ease: [0.17, 0.67, 0.83, 0.67],
+      ease: "easeOut",
       duration: 0.5,
-      delay: 3.5,
+      delay: 1.5,
     },
-  },
-};
-
-// STACK SECTION ANIMATIONS
-
-const container = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      delay: 1,
-      staggerChildren: 0.5,
-    },
-  },
-};
-
-const stackVariant = {
-  hidden: {
-    x: "100%",
-    opacity: 0,
-  },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: { type: "spring", stiffness: 300 },
   },
 };
 
@@ -118,6 +91,4 @@ export {
   headerVariant,
   headerTextVariant,
   headerBtnsVaraints,
-  container,
-  stackVariant,
 };
