@@ -71,28 +71,16 @@ const work = [
     info: `I was an intern frontend developer at KodeCamp for 5 months. During that time, I received training on the technologies of the frontend development career path. As a final project task, I was assigned to a team charged with building a e-commerce store.`,
   },
   {
-    company: `KodeCamp`,
-    position: `Intern`,
-    time: `March 2022 - July 2022`,
-    info: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit dui pellentesque urna tortor tellus quis. In at eu viverra lorem amet, vulputate elementum vel. Vehicula quisque id.`,
+    company: ``,
+    position: ``,
+    time: ``,
+    info: ``,
   },
   {
-    company: `KodeCamp`,
-    position: `Intern`,
-    time: `March 2022 - July 2022`,
-    info: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit dui pellentesque urna tortor tellus quis. In at eu viverra lorem amet, vulputate elementum vel. Vehicula quisque id.`,
-  },
-  {
-    company: `KodeCamp`,
-    position: `Intern`,
-    time: `March 2022 - July 2022`,
-    info: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit dui pellentesque urna tortor tellus quis. In at eu viverra lorem amet, vulputate elementum vel. Vehicula quisque id.`,
-  },
-  {
-    company: `KodeCamp`,
-    position: `Intern`,
-    time: `March 2022 - July 2022`,
-    info: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit dui pellentesque urna tortor tellus quis. In at eu viverra lorem amet, vulputate elementum vel. Vehicula quisque id.`,
+    company: ``,
+    position: ``,
+    time: ``,
+    info: ``,
   },
 ];
 

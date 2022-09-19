@@ -164,7 +164,8 @@ section {
     .job {
       @include workMixin;
       width: 80%;
-      height: 230px;
+      min-height: 230px;
+      height: auto;
       padding: 12px;
       color: #cfcfcf;
       .card-header {
@@ -420,7 +421,8 @@ section {
     .mySwiper {
       .job {
         @include workMixin;
-        height: 239px;
+        min-height: 239px;
+        height: auto;
         padding: 24px;
       }
     }
