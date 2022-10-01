@@ -51,7 +51,13 @@ const Header = () => {
             whileInView='visible'
             exit={{ x: "100%" }}
           >
-            VIEW RESUME
+            <a
+              href='https://drive.google.com/file/d/15bW1JH-sTqoVSOxgqV3qJ-qUq9OM0pd6/view?usp=sharing'
+              target='_blank'
+              rel='noreferrer'
+            >
+              VIEW RESUME
+            </a>
           </motion.button>
         </div>
       </header>

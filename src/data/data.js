@@ -3,6 +3,7 @@ import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 
 // PROJECTS
 import insidious from "../images/insidious.png";
+import monarchLabs from "../images/monarch-labs.png";
 import kodeTech from "../images/kodeTech.png";
 import marketVerse from "../images/market-verse.png";
 import { FaReact, FaSass, FaBootstrap } from "react-icons/fa";
@@ -39,6 +40,18 @@ const projects = [
   },
   {
     id: 2,
+    title: `Monarch Labs`,
+    brief: `The landing page for an NFT marketplace`,
+    live: `https://monarch-labs.netlify.app/`,
+    code: `https://github.com/tonayam/monarch-labs`,
+    image: monarchLabs,
+    techStack: [
+      <FaReact className='icon-1 react' />,
+      <FaSass className='icon-2 sass' />,
+    ],
+  },
+  {
+    id: 3,
     title: `KodeTech E-Commerce`,
     brief: `A functional, fullstack E-commerce webstore`,
     live: `https://muubaraq.github.io/kodetech-test/`,
@@ -50,7 +63,7 @@ const projects = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: `Market-Verse`,
     brief: `The landing page of an NFT marketplace`,
     live: `https://tonayam.github.io/meta-verse/`,
