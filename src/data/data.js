@@ -51,20 +51,10 @@ const projects = [
       <FaSass className='icon-2 sass' />,
     ],
   },
+
+  
   {
     id: 3,
-    title: `Monarch Labs`,
-    brief: `The landing page for an NFT marketplace`,
-    live: `https://monarch-labs.netlify.app/`,
-    code: `https://github.com/tonayam/monarch-labs`,
-    image: monarchLabs,
-    techStack: [
-      <FaReact className='icon-1 react' />,
-      <FaSass className='icon-2 sass' />,
-    ],
-  },
-  {
-    id: 4,
     title: `KodeTech E-Commerce`,
     brief: `A functional, fullstack E-commerce webstore`,
     live: `https://muubaraq.github.io/kodetech-test/`,
@@ -76,7 +66,7 @@ const projects = [
     ],
   },
   {
-    id: 5,
+    id: 4,
     title: `Market-Verse`,
     brief: `The landing page of an NFT marketplace`,
     live: `https://tonayam.github.io/meta-verse/`,
