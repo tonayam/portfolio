@@ -2,6 +2,7 @@ section {
   margin-top: 100px;
   padding-left: 10px;
   padding-top: 50px;
+
   .section-title {
     color: #9c9c9c;
     margin-bottom: 16px;
@@ -22,40 +23,54 @@ section {
     .item {
       height: 158px;
       @include stackMixin;
+
       .logo {
         @include flexCC;
         height: 55%;
         border-radius: 12px 12px 0 0;
+
         .icon {
           font-size: 3rem;
         }
       }
+
       .html {
         background: rgba(228, 77, 38, 0.28);
       }
+
       .css {
         background: rgba(41, 101, 241, 0.28);
       }
+
       .javascript {
         background: #efd81d;
       }
+
       .bootstrap {
         background: #8411f4;
       }
+
       .react {
         background: #1f2229;
         color: #5ed3f3;
       }
+
       .sass {
         background: #c66394;
       }
 
+      .nextjs {
+        background: #000;
+      }
+
       .info {
         padding: 1rem;
+
         h5 {
           color: #13131b;
           text-transform: uppercase;
         }
+
         h6 {
           color: #414141;
         }
@@ -74,10 +89,15 @@ section {
       position: relative;
 
       .img-container {
+        border-radius: 12px 12px 0 0;
+
         img {
           border-radius: 12px 12px 0 0;
           width: 100%;
           height: 100%;
+          object-fit: cover;
+          align-self: center;
+
         }
       }
 
@@ -90,10 +110,12 @@ section {
           margin: 4px 0;
           width: 70%;
         }
+
         .icons {
           position: absolute;
           right: 12px;
           top: 10px;
+
           .icon-1 {
             position: absolute;
             right: 30px;
@@ -101,6 +123,7 @@ section {
             border-radius: 50%;
             padding: 0.2rem;
           }
+
           .icon-2 {
             font-size: 2rem;
             border-radius: 50%;
@@ -111,15 +134,22 @@ section {
             color: #61dbfb;
             background: #20232a;
           }
+
           .javascript {
             background: #f7df1e;
             color: #000000;
           }
+
           .css {
             background: #2965f1;
           }
+
           .sass {
             background: #cc6699;
+          }
+
+          .next {
+            color: #FFFF;
           }
         }
       }
@@ -129,11 +159,13 @@ section {
         display: flex;
         position: absolute;
         bottom: 10px;
+
         button {
           @include btnMixinMobile;
           margin: 0 12px;
           color: #ffffff;
           cursor: pointer;
+
           a {
             @include flexCC;
           }
@@ -143,6 +175,7 @@ section {
             margin-left: 0;
             background: $primaryColor;
           }
+
           &:last-child {
             width: 120px;
             background: rgba(196, 222, 253, 0.3);
@@ -168,19 +201,23 @@ section {
       height: auto;
       padding: 12px;
       color: #cfcfcf;
+
       .card-header {
         @include flexCB;
+
         .company {
           color: #2965f1;
           margin-bottom: 4px;
         }
       }
+
       .info {
         color: #ffffff;
         margin-top: 16px;
       }
     }
   }
+
   .resume-btn {
     @include btnMixin;
     background: rgba(196, 222, 253, 0.03);
@@ -196,6 +233,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
     li {
       margin: 12px 16px;
     }
@@ -205,10 +243,12 @@ section {
 //   CONTACT ME
 .contact {
   padding-bottom: 2rem;
+
   .socials {
     height: 80px;
     width: 100%;
     display: flex;
+
     .social {
       width: 30%;
       border-right: 1px solid #5f5c5c;
@@ -224,11 +264,13 @@ section {
       &:first-child {
         margin-left: 0;
       }
+
       a {
         width: 25%;
         @include flexCC;
         margin: 0 auto;
       }
+
       .icon {
         font-size: 2.5rem;
         margin-bottom: 8px;
@@ -255,6 +297,7 @@ section {
               width: 125px;
               height: 40px;
             }
+
             &:last-child {
               width: 80px;
               height: 40px;
@@ -270,6 +313,7 @@ section {
   section {
     margin-top: 150px;
     padding-top: 50px;
+
     .section-title {
       font-size: 1.6rem;
     }
@@ -295,6 +339,7 @@ section {
             &:first-child {
               width: 245px;
             }
+
             &:last-child {
               width: 180px;
             }
@@ -318,6 +363,7 @@ section {
   .skills {
     .skills-list {
       width: 610px;
+
       li {
         margin: 12px 32px;
       }
@@ -327,6 +373,7 @@ section {
   .contact {
     .socials {
       height: 147px;
+
       .social {
         width: 255px;
         padding-right: 60px;
@@ -335,6 +382,7 @@ section {
         &:first-child {
           margin-left: 0;
         }
+
         img {
           margin-bottom: 16px;
           width: 25%;
@@ -344,24 +392,27 @@ section {
   }
 }
 
-@include for-tablet-landscape-up {
-}
+@include for-tablet-landscape-up {}
 
 @include for-desktop-up {
   section {
     margin-top: 200px;
     padding-left: 120px;
+
     .section-title {
       font-size: 2rem;
       margin-bottom: 32px;
     }
   }
+
   // TECH STACK
   .stack {
     .grid-container {
       grid-template-columns: repeat(4, 238px);
+
       .item {
         height: 158px;
+
         .logo {
           height: 50%;
         }
@@ -380,6 +431,7 @@ section {
         @include projectMixin;
         width: 463px;
         height: 470px;
+
         .img-container {
           height: 47%;
         }
@@ -389,10 +441,12 @@ section {
 
           .icons {
             right: 16px;
+
             .icon-1 {
               right: 40px;
               font-size: 3.4rem;
             }
+
             .icon-2 {
               font-size: 3.4rem;
             }
@@ -401,12 +455,14 @@ section {
 
         .buttons {
           padding: 16px;
+
           button {
             @include btnMixin;
 
             &:first-child {
               width: 245px;
             }
+
             &:last-child {
               width: 165px;
             }
@@ -426,6 +482,7 @@ section {
         padding: 24px;
       }
     }
+
     .resume-btn {
       @include btnMixin;
       background: rgba(196, 222, 253, 0.03);
@@ -446,5 +503,4 @@ section {
   }
 }
 
-@include for-big-desktop-up {
-}
+@include for-big-desktop-up {}

@@ -1,29 +1,32 @@
 // SOCIALS
-import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
+import { BsGithub, BsLinkedin, BsTwitter } from 'react-icons/bs';
 
 // PROJECTS
-import insidious from "../images/insidious.png";
-import lendsqr from "../images/lendsqr.png";
-import monarchLabs from "../images/monarch-labs.png";
-import kodeTech from "../images/kodeTech.png";
-import marketVerse from "../images/market-verse.png";
-import { FaReact, FaSass, FaBootstrap } from "react-icons/fa";
-import { SiJavascript } from "react-icons/si";
-import { DiJavascript1, DiCss3 } from "react-icons/di";
+import insidious from '../images/insidious.png';
+import chessonchain from '../images/chessonchain.png';
+import electricBikes from '../images/electric-bikes.png';
+import lendsqr from '../images/lendsqr.png';
+import kodeTech from '../images/kodeTech.png';
+import marketVerse from '../images/market-verse.png';
+
+import { FaReact, FaSass, FaBootstrap } from 'react-icons/fa';
+import { SiJavascript, SiNextdotjs } from 'react-icons/si';
+import { DiJavascript1, DiCss3 } from 'react-icons/di';
 
 const stack = [
-  { name: `sass`, years: `2 years`, logo: <FaSass className='icon' /> },
+  { name: `sass`, years: `3 years`, logo: <FaSass className='icon' /> },
   {
     name: `bootstrap`,
-    years: `2 years`,
+    years: `3 years`,
     logo: <FaBootstrap className='icon' />,
   },
   {
     name: `javascript`,
-    years: `2 years`,
+    years: `3 years`,
     logo: <SiJavascript className='icon' />,
   },
-  { name: `react`, years: `2 years`, logo: <FaReact className='icon' /> },
+  { name: `react`, years: `3 years`, logo: <FaReact className='icon' /> },
+  { name: `nextjs`, years: `2 years`, logo: <SiNextdotjs className='icon' /> },
 ];
 
 const projects = [
@@ -41,6 +44,31 @@ const projects = [
   },
   {
     id: 2,
+    title: `ChessOnChain`,
+    brief: `A web3 startup building the future of chess on the blockchain`,
+    live: `https://chessonchain.io/`,
+    code: `https://github.com/tonayam/ChessonChain`,
+    image: chessonchain,
+    techStack: [
+      <SiNextdotjs className='icon-1 next' />,
+      <FaSass className='icon-2 sass' />,
+    ],
+  },
+
+  {
+    id: 3,
+    title: `Electric Bikes`,
+    brief: `A Nigerian based e-commerce store that sells electric bikes`,
+    live: `https://electric-bikes-theta.vercel.app/`,
+    code: `https://github.com/tonayam/`,
+    image: electricBikes,
+    techStack: [
+      <FaReact className='icon-1 react' />,
+      <FaSass className='icon-2 sass' />,
+    ],
+  },
+  {
+    id: 4,
     title: `lendsqr`,
     brief: `Dashboard for an admin page`,
     live: `https://lendsqr-fe-test.netlify.app/`,
@@ -52,9 +80,8 @@ const projects = [
     ],
   },
 
-  
   {
-    id: 3,
+    id: 5,
     title: `KodeTech E-Commerce`,
     brief: `A functional, fullstack E-commerce webstore`,
     live: `https://muubaraq.github.io/kodetech-test/`,
@@ -66,7 +93,7 @@ const projects = [
     ],
   },
   {
-    id: 4,
+    id: 6,
     title: `Market-Verse`,
     brief: `The landing page of an NFT marketplace`,
     live: `https://tonayam.github.io/meta-verse/`,
@@ -81,16 +108,16 @@ const projects = [
 
 const work = [
   {
+    company: `Astrosoft`,
+    position: `Frontend Developer`,
+    time: `January 2023 - Present `,
+    info: `I build modern webapps using ReactJS and NextJS. I also work with a team of experienced product designers and developers as well, to build products that satisfy the needs of our clients  `,
+  },
+  {
     company: `KodeCamp`,
     position: `Intern`,
     time: `March 2022 - July 2022`,
     info: `I was an intern frontend developer at KodeCamp for 5 months. During that time, I received training on the technologies of the frontend development career path. As a final project task, I was assigned to a team charged with building a e-commerce store.`,
-  },
-  {
-    company: ``,
-    position: ``,
-    time: ``,
-    info: ``,
   },
   {
     company: ``,
@@ -107,9 +134,10 @@ const skills = [
   `TAILWIND`,
   `JAVASCRIPT`,
   `REACT`,
+  `NextJs`,
+  `NodeJs`,
   `FRAMER MOTION`,
-  `JQUERY`,
-  `REDUX`,
+  `Context API`,
   `FIGMA`,
 ];
 
