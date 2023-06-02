@@ -5,6 +5,7 @@ import { BsGithub, BsLinkedin, BsTwitter } from 'react-icons/bs';
 import insidious from '../images/insidious.png';
 import chessonchain from '../images/chessonchain.png';
 import electricBikes from '../images/electric-bikes.png';
+import springFoods from '../images/spring-foods.png';
 import lendsqr from '../images/lendsqr.png';
 import kodeTech from '../images/kodeTech.png';
 import marketVerse from '../images/market-verse.png';
@@ -69,6 +70,18 @@ const projects = [
   },
   {
     id: 4,
+    title: `Spring Foods`,
+    brief: `Nigeria No.1 Food Processor`,
+    live: `https://spring-food.vercel.app/`,
+    code: `https://github.com/tonayam/spring-food`,
+    image: springFoods,
+    techStack: [
+      <FaReact className='icon-1 react' />,
+      <FaSass className='icon-2 sass' />,
+    ],
+  },
+  {
+    id: 5,
     title: `lendsqr`,
     brief: `Dashboard for an admin page`,
     live: `https://lendsqr-fe-test.netlify.app/`,
@@ -81,7 +94,7 @@ const projects = [
   },
 
   {
-    id: 5,
+    id: 6,
     title: `KodeTech E-Commerce`,
     brief: `A functional, fullstack E-commerce webstore`,
     live: `https://muubaraq.github.io/kodetech-test/`,
@@ -93,7 +106,7 @@ const projects = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     title: `Market-Verse`,
     brief: `The landing page of an NFT marketplace`,
     live: `https://tonayam.github.io/meta-verse/`,
