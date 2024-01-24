@@ -13,6 +13,7 @@ section {
 // TECH STACK
 .stack {
   width: 100%;
+  padding-right: 10px;
 
   .grid-container {
     display: grid;
@@ -50,6 +51,11 @@ section {
         background: #8411f4;
       }
 
+      .tailwind {
+        background: #0b1120;
+        color: #38bdf8;
+      }
+
       .react {
         background: #1f2229;
         color: #5ed3f3;
@@ -61,6 +67,10 @@ section {
 
       .nextjs {
         background: #000;
+      }
+      .nodejs {
+        background: #333333;
+        color: #61b348;
       }
 
       .info {
@@ -85,7 +95,7 @@ section {
     .project {
       @include projectMixin;
       width: 80%;
-      height: 400px;
+      min-height: 350px;
       position: relative;
 
       .img-container {
@@ -97,7 +107,6 @@ section {
           height: 100%;
           object-fit: cover;
           align-self: center;
-
         }
       }
 
@@ -109,30 +118,50 @@ section {
         h4 {
           margin: 4px 0;
           width: 70%;
+          font-weight: 600;
+        }
+
+        p {
+          margin: 4px 0;
+          width: 70%;
+          font-size: clamp(0.8rem, 2vw, 0.9rem);
+          font-weight: 300;
         }
 
         .icons {
           position: absolute;
           right: 12px;
           top: 10px;
+          font-size: 2rem;
 
           .icon-1 {
             position: absolute;
             right: 30px;
-            font-size: 2rem;
             border-radius: 50%;
             padding: 0.2rem;
           }
 
           .icon-2 {
-            font-size: 2rem;
             border-radius: 50%;
             padding: 0.2rem;
+          }
+
+          .icon-3 {
+            border-radius: 50%;
+            padding: 0.2rem;
+            right: 15px;
+            bottom: -15px;
+            position: absolute;
           }
 
           .react {
             color: #61dbfb;
             background: #20232a;
+          }
+
+          .nodejs {
+            color: #61b348;
+            background-color: #fff;
           }
 
           .javascript {
@@ -144,12 +173,17 @@ section {
             background: #2965f1;
           }
 
+          .html {
+            border: 2px solid red;
+            background: #e44d25;
+          }
+
           .sass {
             background: #cc6699;
           }
 
           .next {
-            color: #FFFF;
+            color: #ffff;
           }
         }
       }
@@ -392,7 +426,8 @@ section {
   }
 }
 
-@include for-tablet-landscape-up {}
+@include for-tablet-landscape-up {
+}
 
 @include for-desktop-up {
   section {
@@ -407,8 +442,10 @@ section {
 
   // TECH STACK
   .stack {
+    padding-right: 120px;
+
     .grid-container {
-      grid-template-columns: repeat(4, 238px);
+      grid-template-columns: repeat(4, 1fr);
 
       .item {
         height: 158px;
@@ -441,14 +478,15 @@ section {
 
           .icons {
             right: 16px;
+            font-size: 3.4rem;
 
             .icon-1 {
               right: 40px;
-              font-size: 3.4rem;
             }
 
-            .icon-2 {
-              font-size: 3.4rem;
+            .icon-3 {
+              right: 20px;
+              bottom: -30px;
             }
           }
         }
@@ -503,4 +541,5 @@ section {
   }
 }
 
-@include for-big-desktop-up {}
+@include for-big-desktop-up {
+}

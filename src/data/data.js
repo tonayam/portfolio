@@ -9,10 +9,13 @@ import springFoods from '../images/spring-foods.png';
 import lendsqr from '../images/lendsqr.png';
 import kodeTech from '../images/kodeTech.png';
 import marketVerse from '../images/market-verse.png';
+import kmanalysis from '../images/kmanalysis.png';
+import crspredictions from '../images/crspredictions.png';
+import nhutchi from '../images/nhutchi.png';
 
-import { FaReact, FaSass, FaBootstrap } from 'react-icons/fa';
-import { SiJavascript, SiNextdotjs } from 'react-icons/si';
-import { DiJavascript1, DiCss3 } from 'react-icons/di';
+import { FaReact, FaSass, FaBootstrap, FaNodeJs } from 'react-icons/fa';
+import { SiJavascript, SiNextdotjs, SiTailwindcss } from 'react-icons/si';
+import { DiJavascript1, DiCss3, DiHtml5 } from 'react-icons/di';
 
 const stack = [
   { name: `sass`, years: `3 years`, logo: <FaSass className='icon' /> },
@@ -22,17 +25,58 @@ const stack = [
     logo: <FaBootstrap className='icon' />,
   },
   {
+    name: `tailwind`,
+    years: `2 years`,
+    logo: <SiTailwindcss className='icon' />,
+  },
+  {
     name: `javascript`,
     years: `3 years`,
     logo: <SiJavascript className='icon' />,
   },
   { name: `react`, years: `3 years`, logo: <FaReact className='icon' /> },
-  { name: `nextjs`, years: `2 years`, logo: <SiNextdotjs className='icon' /> },
+  { name: `nextjs`, years: `3 years`, logo: <SiNextdotjs className='icon' /> },
+  { name: `nodejs`, years: `2 years`, logo: <FaNodeJs className='icon' /> },
 ];
 
 const projects = [
   {
-    id: 1,
+    title: `KM Analysis`,
+    brief: `A sports rediction web application`,
+    live: `https://kmanalysis.com/`,
+    code: `https://github.com/`,
+    image: kmanalysis,
+    techStack: [
+      <FaReact className='icon-1 react' />,
+      <FaSass className='icon-2 sass' />,
+      <FaNodeJs className='icon-3 nodejs' />,
+    ],
+  },
+  {
+    title: `CRSpredictions`,
+    brief: `A sports rediction web application`,
+    live: `https://crspredictions.com/`,
+    code: `https://github.com/`,
+    image: crspredictions,
+    techStack: [
+      <SiNextdotjs className='icon-1 next' />,
+      <FaSass className='icon-2 sass' />,
+      <FaNodeJs className='icon-3 nodejs' />,
+    ],
+  },
+  {
+    title: `Nhutchi`,
+    brief: `A fintech solution`,
+    live: `https://nhutchi.co.mz/`,
+    code: `https://github.com/tonayam/`,
+    image: nhutchi,
+    techStack: [
+      <DiHtml5 className='icon-1 html' />,
+      <DiJavascript1 className='icon-2 javascript' />,
+      <DiCss3 className='icon-3 css' />,
+    ],
+  },
+  {
     title: `Insidious Games`,
     brief: `A webApp that provides video game information`,
     live: `https://insidious-games.netlify.app/`,
@@ -44,7 +88,6 @@ const projects = [
     ],
   },
   {
-    id: 2,
     title: `ChessOnChain`,
     brief: `A web3 startup building the future of chess on the blockchain`,
     live: `https://chessonchain.io/`,
@@ -57,7 +100,6 @@ const projects = [
   },
 
   {
-    id: 3,
     title: `Electric Bikes`,
     brief: `A Nigerian based e-commerce store that sells electric bikes`,
     live: `https://electric-bikes-theta.vercel.app/`,
@@ -69,7 +111,6 @@ const projects = [
     ],
   },
   {
-    id: 4,
     title: `Spring Foods`,
     brief: `Nigeria No.1 Food Processor`,
     live: `https://spring-food.vercel.app/`,
@@ -81,7 +122,6 @@ const projects = [
     ],
   },
   {
-    id: 5,
     title: `lendsqr`,
     brief: `Dashboard for an admin page`,
     live: `https://lendsqr-fe-test.netlify.app/`,
@@ -94,7 +134,6 @@ const projects = [
   },
 
   {
-    id: 6,
     title: `KodeTech E-Commerce`,
     brief: `A functional, fullstack E-commerce webstore`,
     live: `https://muubaraq.github.io/kodetech-test/`,
@@ -106,7 +145,6 @@ const projects = [
     ],
   },
   {
-    id: 7,
     title: `Market-Verse`,
     brief: `The landing page of an NFT marketplace`,
     live: `https://tonayam.github.io/meta-verse/`,
@@ -121,6 +159,12 @@ const projects = [
 
 const work = [
   {
+    company: `KM Analysis`,
+    position: `Fullstack Developer (contract)`,
+    time: `Sept 2023 - Nov 2023`,
+    info: `I was contracted to build a web application with a complete content management system for KM Analysis, a sports prediction company based in Nigeria`,
+  },
+  {
     company: `Astrosoft`,
     position: `Frontend Developer`,
     time: `January 2023 - Present `,
@@ -131,12 +175,6 @@ const work = [
     position: `Intern`,
     time: `March 2022 - July 2022`,
     info: `I was an intern frontend developer at KodeCamp for 5 months. During that time, I received training on the technologies of the frontend development career path. As a final project task, I was assigned to a team charged with building a e-commerce store.`,
-  },
-  {
-    company: ``,
-    position: ``,
-    time: ``,
-    info: ``,
   },
 ];
 
